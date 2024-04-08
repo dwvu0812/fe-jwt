@@ -6,7 +6,7 @@ import Login from "./components/login/login";
 function App() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <Routes>
         <Route index element={"Home"} />
         <Route path="news" element={"News"} />
