@@ -26,4 +26,10 @@ const logInUser = async (data) => {
   });
 };
 
-export { registerUser, logInUser };
+const fetchUsers = async (page, limit) => {
+  return await axios.get(
+    `http://localhost:8080/api/v1/user/read?page=${page}&limit=${limit}`
+  );
+};
+
+export { registerUser, logInUser, fetchUsers };
